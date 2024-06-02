@@ -1,0 +1,140 @@
+
+
+.course-card {
+    width: 20rem;
+    height: 24rem;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    display: grid;
+}
+
+.course-image {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.course-image:hover {
+    transform: scale(1.05);
+}
+
+.course-title {
+    margin: 16px;
+    font-size: 24px;
+    color: #333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 1400px) {
+    .course-card {
+        display: grid;
+         grid-template-columns: repeat(2, 1fr); /* Two columns for screens 1400px or smaller */
+    }
+
+    .course-image {
+        height: 13rem;
+    }
+
+    .course-title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .course-card {
+        width: 16rem;
+        height: 16rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for screens 1400px or smaller */
+    }
+
+    .course-image {
+        height: 12rem;
+    }
+
+    .course-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .course-card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for screens 1400px or smaller */
+    }
+
+    .course-image {
+        height: auto;
+    }
+
+    .course-title {
+        font-size: 18px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .close {
+        font-size: 30px;
+        top: 10px;
+        right: 20px;
+    }
+}

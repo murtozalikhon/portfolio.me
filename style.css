@@ -303,6 +303,22 @@ section {
   text-align: center;
 }
 
+.project-containers{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates two equal columns */
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.course-containers{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates two equal columns */
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -357,6 +373,17 @@ article .icon {
 
 #projects {
   position: relative;
+  height: 100%;
+}
+#course ,#achievement{
+  position: relative;
+  height: 100%;
+  margin-top: 50px;
+}
+#project_and_research_book{
+  position: relative;
+  height: 100%;
+  margin-top: 50px;
 }
 
 .color-container {

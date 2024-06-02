@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="course.css">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -16,6 +17,10 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#project_and_research_book">Books</a></li>
+          <li><a href="#course">Courses</a></li>
+          <li><a href="#achievement">Achievement</a></li>
+          <li><a href="#co_curricular">Activities</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -47,7 +52,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/europass1.pdf')"
+            onclick="window.open('./assets/CV of Md. Golam Murtoza(Tabular).pdf')"
           >
             Download CV
           </button>
@@ -359,7 +364,7 @@
       <p class="section__text__p2" style="font-size: 3; text-align: center;">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="project-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -480,6 +485,30 @@
               </button>
             </div>
           </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/job.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Job Circular</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/murtozalikhon'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://play.google.com/store/apps/details?id=com.bdcareerhelp.jobcircularpro&pcampaignid=web_share'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <img
@@ -489,6 +518,236 @@
         onclick="location.href='./#contact'"
       />
     </section>
+
+
+    <!-- =============================================================================Project and Research Boook========================================================= -->
+    <section id="project_and_research_book">
+      <h1 class="title">Project and Research Books</h1>
+      <div class="experience-details-container">
+        <div class="course-containers project-containers">
+          <div class="course-card">
+            <img  src="./assets/Event Management page.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Event Management System.pdf')"
+          >
+            Download
+          </button>
+              <h2 class="course-title">Event Management System</h2>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/transport managemnt page.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Teacher Transport Management System.pdf')"
+          >
+            Download
+          </button>
+              <h2 class="course-title">Teacher Transport Management System</h2>
+                
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/thesis cover page.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Thesis paper- A Transfer Learning Approach for Blood Cancer Detection.pdf')"
+          >
+            Download
+          </button>
+              <h2 class="course-title">Thesis paper</h2>
+              <p>Blood Cancer Detection</p>
+            </div>
+          </div>
+      
+    
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+<!-- //=============================================================================COURSE========================================================= -->
+    <section id="course">
+      <h1 class="title">Courses</h1>
+      <div class="experience-details-container">
+        <div class="course-containers project-containers">
+          <div class="course-card">
+            <img  src="./assets/Mobile Application.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title"> Mobile Application Development - Android</h2>
+               <p>Bangladesh Association of Software and Information Services (BASIS)</p> 
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/WSDA.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Professional English Communication Skill</h2>
+               <p>Workplace Skills Development Academy </p> 
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/Alison.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Information Security Management System (ISMS)</h2>
+               <p>Alison ( An online learning platform)</p> 
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/Element of AI.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title"> Elements of AI</h2>
+               <p>University of Helsinki, MinnaLearn</p> 
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/Data science with Python.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Data Science with Python</h2>
+               <p>Simplilearn (An online learning platform)</p> 
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/IOT.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Introduction to IoT</h2>
+               <p>Simplilearn (An online learning platform)</p> 
+            </div>
+          </div>
+
+      
+    
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- //=============================================================================ACHIVEMENT========================================================= -->
+    <section id="achievement">
+      <h1 class="title">Achievement</h1>
+      <div class="experience-details-container">
+        <div class="course-containers project-containers">
+          <div class="course-card">
+            <img  src="./assets/Information & technology.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Contribution on Information & Technology, UCEC</h2> 
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/Intra university contest 2021.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Achievement in Intra University Programming Contest 2021</h2>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/Intra virtual fest.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Achievement in Virtual fest 2020</h2>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/Summer fest 23.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Achievement in Summer Fest 2023</h2>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/victory day contest.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Achievement in Victory Day Programming Contest 2022</h2>
+            </div>
+          </div>
+    
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+    <!-- //=============================================================================Co-Curricular========================================================= -->
+    <section id="co_curricular">
+      <h1 class="title">Co-curricular Activities</h1>
+      <div class="experience-details-container">
+        <div class="course-containers project-containers">
+          <div class="course-card">
+            <img  src="./assets/fire safety.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Seminar on International Fire Safety & Security</h2>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/Volunteer and Organizer.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Volunteer and Organizer of Zero One Fest 2021</h2>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img  src="./assets/volunteer 2020.png" alt="Course Image" class="course-image" onclick="showImageModal()">
+            <div class="info">
+              <h2 class="course-title">Volunteer of Intra Virtual Fest 2020</h2>
+            </div>
+          </div>
+    
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+
     <section id="contact">
       <p class="section__text__p2" style="font-size: 3; text-align: center;">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -499,7 +758,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:murtozalikhon@gmail.com">murtozalikhon@gmail.com</a></p>
+          <p><a href="mailto:murtozalikhon@gmail.com">likhon.uits@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -533,5 +792,7 @@
       <p>Copyright &#169; 2024 Md. Golam Murtoza. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="course.js"></script>
+
   </body>
 </html>

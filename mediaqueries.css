@@ -6,6 +6,9 @@
   .about-containers {
     flex-wrap: wrap;
   }
+  .project-containers {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for screens 1400px or smaller */
+  }
   #contact,
   #projects {
     height: fit-content;
@@ -45,6 +48,9 @@
   .about-containers {
     margin-top: 0;
   }
+  .project-containers {
+    grid-template-columns: repeat(2, 1fr); /* Keep two columns for screens 1200px or smaller */
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -67,6 +73,9 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+  }
+  .project-containers {
+    grid-template-columns: 1fr; /* One column for screens 600px or smaller */
   }
   .contact-info-container {
     margin: 0;

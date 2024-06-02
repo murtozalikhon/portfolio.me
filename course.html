@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Card</title>
+    <link rel="stylesheet" href="course.css">
+</head>
+<body>
+    <div class="course-card">
+        <img src="course-image.jpg" alt="Course Image" class="course-image" onclick="showImageModal()">
+        <h2 class="course-title">Course Title</h2>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="course.js"></script>
+</body>
+</html>
